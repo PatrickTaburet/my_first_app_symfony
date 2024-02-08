@@ -18,7 +18,7 @@ class ContactController extends AbstractController
        #{ $manager=$this->getDoctrine()->getManager();}#
         #{ $repo = $manager->getRepository(Contact::class); }#
         $contacts = $repo->findAll();
-
+        
         return $this->render('contact/listeContact.html.twig', [
             "lesContacts" => $contacts
                #{'controller_name' => 'ContactController',}#
