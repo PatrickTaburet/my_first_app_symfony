@@ -21,9 +21,12 @@ class ContactController extends AbstractController
         
         return $this->render('contact/listeContact.html.twig', [
             "lesContacts" => $contacts
+           
                #{'controller_name' => 'ContactController',}#
         ]); 
+       
     }
+    
     /**
      * @Route("/contact/{id}", name="contact", methods={"GET"})
      */
