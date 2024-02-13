@@ -14,7 +14,6 @@ class ContactsFixtures extends Fixture
         $faker = Factory::create("fr_FR");
         $genres = ["male", "female"];
        
-        // $manager->persist($product);
         for ($i=0;$i<100;$i++){
             $sexe = mt_rand(0,1);
             if ($sexe == 0){
