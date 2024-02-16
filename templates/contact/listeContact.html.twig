@@ -27,6 +27,7 @@ Liste des contacts
                         {% endif %}
                        
                 </li>
+                <li class="list-group-item"><a href="{{path('categorie', {'id': leContact.categorie.id})}}">{{leContact.categorie.libelle}}</a></li>
             </ul>
             <div class="card-body">
                 <a href="{{path('contact', {'id': leContact.id})}}" class="btn btn-success btn-block text-center w-100">Détails ...</a>
